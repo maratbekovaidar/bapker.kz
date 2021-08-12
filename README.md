@@ -1,4 +1,4 @@
 # BAPKER.KZ
 Website for Спорт түрлері бойынша ҚР жаттықтырушыларының бірыңғай базасы
 
-![alt tag](http://domain.com/path/to/img.png "Описание будет тут")​
+![alt tag](bapker.kz.png "Figma link - https://www.figma.com/file/HHIRVBI6YxrVKOJ2S9Kw66/Bapker.kz")​
