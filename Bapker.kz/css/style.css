@@ -1,0 +1,512 @@
+:root {
+    --main-color: #0a53be;
+}
+
+@font-face {
+    font-family: "Palatino Linotype";
+    src: url("/fonts/Palatino_Linotype.ttf");
+}
+
+body {
+    background-color: #EFEFEF;
+    font-family: "Times New Roman", sans-serif;
+}
+
+/* Top header */
+.top_header {
+    background-color: var(--main-color);
+}
+
+/* Main header */
+.main_header {
+    background-color: white;
+}
+
+.main_header button {
+    height: 100%;
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
+
+.main_header button:focus {
+    outline: transparent;
+}
+
+.con,
+.special-con {
+    cursor: pointer;
+    display: inline-block;
+}
+
+.bar {
+    display: block;
+    height: 5px;
+    width: 50px;
+    background: var(--main-color);
+    margin: 10px auto;
+}
+
+.con {
+    width: auto;
+    margin: 0 auto;
+    -webkit-transition: all .7s ease;
+    -moz-transition: all .7s ease;
+    -ms-transition: all .7s ease;
+    -o-transition: all .7s ease;
+    transition: all .7s ease;
+}
+
+.con:hover .bar,.special-con:hover .bar {
+    background-color: var(--main-color);
+}
+
+.col {
+    display: inline-block;
+    width: 24%;
+    text-align: center;
+    height: auto;
+    position: relative;
+}
+
+.middle {
+    margin: 0 auto;
+}
+
+.bar {
+    -webkit-transition: all .7s ease;
+    -moz-transition: all .7s ease;
+    -ms-transition: all .7s ease;
+    -o-transition: all .7s ease;
+    transition: all .7s ease;
+}
+
+.main_header button:focus .con > .top {
+    -webkit-transform: translateY(15px) rotateZ(45deg);
+    -moz-transform: translateY(15px) rotateZ(45deg);
+    -ms-transform: translateY(15px) rotateZ(45deg);
+    -o-transform: translateY(15px) rotateZ(45deg);
+    transform: translateY(15px) rotateZ(45deg);
+}
+
+.main_header button:focus .con > .bottom {
+    -webkit-transform: translateY(-15px) rotateZ(-45deg);
+    -moz-transform: translateY(-15px) rotateZ(-45deg);
+    -ms-transform: translateY(-15px) rotateZ(-45deg);
+    -o-transform: translateY(-15px) rotateZ(-45deg);
+    transform: translateY(-15px) rotateZ(-45deg);
+}
+
+.main_header button:focus .con > .middle {
+    width: 0;
+}
+
+.ua {
+    position: absolute;
+    right: 30px;
+    bottom: 20px;
+    color: #6FFFE9;
+    font-size: 2em;
+}
+
+.fa {
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.main_header button:focus .fa {
+    color: #6FFFE9;
+;
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    transform: scale(1.5);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+/* Login */
+
+
+.login a {
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    background-color: #0a53be;
+    border-radius: 5px;
+    transition: .4s;
+}
+
+.login a:hover {
+    background-color: #074199;
+    transition: .4s;
+    box-shadow: 0 0 5px #0a53be;
+}
+
+/* Languages select */
+
+.header_lang > input {
+    height: 35px;
+}
+
+.languages select {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+}
+
+
+.languages select option {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: black;
+}
+
+
+/* Main Header */
+
+/* Logo */
+
+.header_logo {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-size: 40px;
+    padding: 0;
+    margin: 0;
+}
+
+/* Header Menu */
+
+.nav-item a {
+    color: gray;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.nav-item a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+/* About Us Banner */
+.about_us {
+    background-image: url(https://img01.products.bt.co.uk/content/dam/bt/storefront/bt-sports/2019/july/TVBoxes-Championsleague-Liverpool-HeroBanner-1920x600-x1-01.png);
+    background-position: center;
+    margin-top: 50px;
+    height: 300px;
+}
+
+.about_us > div {
+    /*background-color: rgba(10, 83, 190, 0.3);*/
+    background: rgb(10,83,190);
+    background: -moz-linear-gradient(180deg, rgba(10,83,190,1) 23%, rgba(10,83,190,0.8942927512801996) 45%, rgba(10,83,190,0.7066176812521884) 68%, rgba(10,83,190,0.44611347957151615) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(10,83,190,1) 23%, rgba(10,83,190,0.8942927512801996) 45%, rgba(10,83,190,0.7066176812521884) 68%, rgba(10,83,190,0.44611347957151615) 100%);
+    background: linear-gradient(180deg, rgba(10,83,190,1) 23%, rgba(10,83,190,0.8942927512801996) 45%, rgba(10,83,190,0.7066176812521884) 68%, rgba(10,83,190,0.44611347957151615) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0a53be",endColorstr="#0a53be",GradientType=1);
+}
+
+.about_us h2 {
+    background: transparent;
+}
+
+.about_hr {
+    padding: 3px;
+    background-color: white;
+    border: none;
+    border-radius: 3px;
+}
+
+.block_title {
+    font-family: "Palatino Linotype", sans-serif;
+}
+
+.ff-palatino {
+    font-family: "Palatino Linotype", sans-serif;
+}
+
+/* Sport Types */
+
+.sport_type_img {
+    border-radius: 50%;
+}
+
+/* Best Trainers */
+
+.slider_trainers .slider__wrapper {
+    overflow: hidden;
+    width: 90%;
+}
+
+.slider_trainers .slider__item {
+    flex: 0 0 100%;
+    max-width: 100%;
+    height: 600px;
+}
+
+.best_trainers_img {
+    height: 70%;
+}
+
+.best_trainers_description {
+}
+
+.best_trainers_description h6 {
+    width: 90%;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    line-height: 1.3em;
+    height: 90%;
+}
+
+/* на маленьких устройствах – 1 слайд (настройка по умолчанию) */
+
+/* на средних экранах (ширина больше 768px) – 2 слайда */
+@media (min-width: 768px) {
+    .slider_trainers .slider__item {
+        flex: 0 0 50%;
+        max-width: 50%;
+        height: 700px;
+    }
+    .best_trainers_img {
+        height: 50%;
+    }
+
+    .best_trainers_description {
+    }
+
+    .best_trainers_description h6 {
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 7;
+        -webkit-box-orient: vertical;
+        line-height: 1.3em;
+        height: 90%;
+    }
+
+
+    .slider_trainers .slider__item > div {
+        box-shadow: 0 0 35px gray;
+        border-radius: 3%;
+    }
+}
+
+/* на больших экранах (ширина больше 1200px) – 3 слайда */
+@media (min-width: 1200px) {
+    .slider_trainers .slider__item {
+        flex: 0 0 33.3333333333%;
+        max-width: 33.3333333333%;
+        height: 600px;
+
+    }
+    .slider_trainers .slider__item > div {
+        box-shadow: 0 0 35px gray;
+        border-radius: 3%;
+    }
+
+    .best_trainers_img {
+        height: 50%;
+    }
+
+    .best_trainers_description {
+    }
+
+    .best_trainers_description h6 {
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 7;
+        -webkit-box-orient: vertical;
+        line-height: 1.3em;
+        height: 90%;
+    }
+}
+
+.slider_trainers .slider__item > div {
+    box-shadow: 0 0 0px gray;
+    border-radius: 3%;
+}
+
+.slider_trainers .slider__item > div > div:last-child {
+    border-top-right-radius: 3%;
+    border-top-left-radius: 3%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slider_trainers .slider__item > div > div:first-child {
+    border-bottom-right-radius: 3%;
+    border-bottom-left-radius: 3%;
+}
+
+.slider_trainers .slider__control {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: var(--main-color);
+    box-shadow: 0 0 12px var(--main-color);
+    transition: 0.4s;
+}
+
+.slider_trainers .slider__control:hover {
+    background-color: var(--main-color);
+    box-shadow: 0 0 0 var(--main-color);
+    transition: 0.4s;
+}
+
+.slider_trainers .slider__control:focus {
+    background-color: var(--main-color);
+}
+
+.slider_trainers .slider__indicators {
+    position: relative;
+}
+
+.slider_trainers .slider__indicators li {
+    width: 14px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: gray;
+    margin: 0 20px;
+}
+
+.slider_trainers .slider__indicators li.active {
+    background-color: black;
+}
+
+/* Partners */
+
+.slider_partner .slider__wrapper {
+    overflow: hidden;
+    width: 90%;
+}
+
+.slider_partner .slider__items {
+    width: 100%;
+}
+
+.slider_partner .slider__item img {
+    margin: 0 auto;
+}
+
+.slider_partner .slider__item {
+    flex: 0 0 100%;
+    max-width: 100%;
+
+}
+
+/* на маленьких устройствах – 1 слайд (настройка по умолчанию) */
+
+/* на средних экранах (ширина больше 768px) – 2 слайда */
+@media (min-width: 768px) {
+    .slider_partner .slider__item {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+
+}
+
+/* на больших экранах (ширина больше 1200px) – 3 слайда */
+@media (min-width: 992px) {
+    .slider_partner .slider__item {
+        flex: 0 0 33.3333333333%;
+        max-width: 33.3333333333%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .slider_partner .slider__item {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+}
+
+
+.slider_partner .slider__control {
+    background-color: black;
+}
+
+.slider_partner .slider__indicators {
+    position: relative;
+}
+
+.slider_partner .slider__indicators li {
+    width: 14px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: gray;
+    margin: 0 20px;
+}
+
+.slider_partner  .slider__indicators li.active {
+    background-color: black;
+}
+
+.slider_partner .slider__control {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: var(--main-color);
+    box-shadow: 0 0 12px var(--main-color);
+    transition: 0.4s;
+}
+
+.slider_partner .slider__control:hover {
+    background-color: var(--main-color);
+    box-shadow: 0 0 0px var(--main-color);
+    transition: 0.4s;
+}
+
+.slider_partner .slider__control:focus {
+    background-color: var(--main-color);
+}
+
+/* Footer */
+
+.footer {
+    background-color: var(--main-color);
+}
+
+.inner_footer > div {
+    border-left: 3px solid white;
+}
+
+.inner_footer > div:first-child {
+    border-left: 3px solid transparent;
+}
+
+
+.inner_footer > div > div {
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 600px) {
+    .inner_footer > div {
+        border-left: 3px solid transparent;
+        padding-bottom: 15px ;
+    }
+}
+
+
+
+
+
+/* ================= LOGIN PAGE =============== */
+
+

@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    padding: 25px;
+    background-color: #0b5ed7;
+    display: flex;
+    justify-content: center;
+}
+
+.header a {
+    color: white;
+    margin: 0 10px;
+}
+
+@media (max-width: 600px) {
+    .header a {
+        font-size: 30px;
+        color: red;
+    }
+}

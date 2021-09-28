@@ -1,0 +1,345 @@
+<!--  Code and design created by Aidar Maratbekov 10.08.2021  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/chief-slider.css">
+    <script defer src="js/chief-slider.js"></script>
+    <script src="js/stickjaw.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Bapker.kz</title>
+    <script>
+        // после готовности DOM
+        document.addEventListener('DOMContentLoaded', function() {
+            var elms = document.querySelectorAll('.slider_partner');
+            for (var i = 0, len = elms.length; i < len; i++) {
+                // инициализация elms[i] в качестве слайдера
+                new ChiefSlider(elms[i]);
+            }
+            const slider = new ChiefSlider('.slider_partner', {
+                loop: true,
+                autoplay: true,
+                interval: 3000,
+                swipe: true
+            });
+
+            var elms2 = document.querySelectorAll('.slider_trainers');
+            for (var i = 0, len = elms2.length; i < len; i++) {
+                // инициализация elms[i] в качестве слайдера
+                new ChiefSlider(elms2[i]);
+            }
+            const slider2 = new ChiefSlider('.slider_trainers', {
+                loop: true,
+                autoplay: true,
+                interval: 3000,
+                swipe: true
+            });
+        });
+    </script>
+</head>
+<body class="px-0 mx-0">
+    <!--  Header  -->
+    <div class="header px-0 mx-auto">
+        <div class="inner_header px-0">
+            <!--  Top Header  -->
+            <div class="top_header row px-0 w-100 m-0">
+                <div class="inner_top_header col-12 col-lg-8 col-md-10 mx-auto d-flex justify-content-between px-0 py-2">
+                    <div class="header_phone my-auto text-white text-end px-0 d-none d-lg-block">
+                        +7 (747) 127 78 98
+                    </div>
+                    <div class="header_lang d-flex justify-content-between px-3 col-12 col-lg-4">
+                        <input type="text" class="form-control" placeholder="Search...">
+                        <div class="languages my-auto px-2">
+                            <select class="" aria-label="LangSelect">
+                                <option value="1" selected>English</option>
+                                <option value="2">Русский</option>
+                                <option value="3">Қазақща</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--  Main Header-->
+            <div class="main_header px-0">
+                <div class="inner_main_header col-12 col-lg-8 px-0 col-md-10 mx-auto">
+                    <nav class="navbar navbar-expand-lg p-0">
+                        <div class="container-fluid d-flex justify-content-between">
+                            <a class="navbar-brand header_logo me-3" href="/">Bapker.kz</a>
+                            <button class="s" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <div class="con d-block d-lg-none">
+                                    <div class="bar top"></div>
+                                    <div class="bar middle"></div>
+                                    <div class="bar bottom"></div>
+                                </div>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-5 text-center mx-auto">
+                                    <li class="nav-item"><a href="/" class="">Home</a></li>
+                                    <li class="nav-item"><a href="/news" class="">News</a></li>
+                                    <li class="nav-item"><a href="/rating" class="">Rating</a></li>
+                                    <li class="nav-item"><a href="/#SportTypes" class="">Sports</a></li>
+                                    <li class="nav-item"><a href="/about" class="">About</a></li>
+                                </ul>
+                                <div class="login text-center my-3 my-lg-0 text-lg-end my-lg-0">
+                                    <a href="/login" class="">Login</a>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--  About Us  -->
+    <div class="about_us">
+        <div class="row col-12 h-100 p-0 m-0">
+            <div class="col-12 col-lg-8 col-md-10 mx-auto px-3">
+                <h1 class="text-white p-2">BAPKER.KZ</h1>
+                <hr class="about_hr bg-light">
+                <h2 class="text-white w-75">Спорт түрлері бойынша ҚР жаттықтырушыларының бірыңғай базасы</h2>
+            </div>
+        </div>
+    </div>
+
+    <!--  Sport Types  -->
+    <div class="sport_types px-0 row mx-auto" style="margin: 150px 0">
+        <div class="inner_sport_types col-12 col-lg-8 col-md-10 mx-auto">
+            <h1 class="block_title text-center text-uppercase fw-bold">Sport Types</h1>
+            <div class="row p-0 m-0 mx-auto">
+                <div class="col-12 col-lg-4 col-md-6 col-sm-6 p-5">
+                    <div class="h-100 w-100 mx-auto">
+                        <img src="img/sport_types/image_1.png" class="sport_type_img w-100 px-4 py-2" alt="">
+                        <p class="fs-3 text-center ff-palatino py-0 m-0">National</p>
+                        <img src="img/hr_Line.svg" class="w-100 px-3 py-0 m-0" alt="">
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 col-md-6 col-sm-6 p-5">
+                    <div class="h-100 w-100 mx-auto">
+                        <img src="img/sport_types/image_2.png" class="sport_type_img w-100 px-4 py-2" alt="">
+                        <p class="fs-3 text-center ff-palatino py-0 m-0">Olympics</p>
+                        <img src="img/hr_Line.svg" class="w-100 px-3 py-0 m-0" alt="">
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 col-md-6 col-sm-6 p-5">
+                    <div class="h-100 w-100 mx-auto">
+                        <img src="img/sport_types/image_3.png" class="sport_type_img w-100 px-4 py-2" alt="">
+                        <p class="fs-3 text-center ff-palatino py-0 m-0">Paralympics</p>
+                        <img src="img/hr_Line.svg" class="w-100 px-3 py-0 m-0" alt="">
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 col-md-6 col-sm-6 p-5">
+                    <div class="h-100 w-100 mx-auto">
+                        <img src="img/sport_types/image_4.png" class="sport_type_img w-100 px-4 py-2" alt="">
+                        <p class="fs-3 text-center ff-palatino py-0 m-0">Deaflympics</p>
+                        <img src="img/hr_Line.svg" class="w-100 px-3 py-0 m-0" alt="">
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 col-md-6 col-sm-6 p-5">
+                    <div class="h-100 w-100 mx-auto">
+                        <img src="img/sport_types/image_5.png" class="sport_type_img w-100 px-4 py-2" alt="">
+                        <p class="fs-3 text-center ff-palatino py-0 m-0">Winter</p>
+                        <img src="img/hr_Line.svg" class="w-100 px-3 py-0 m-0" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--  Best Trainers  -->
+    <div class="best_trainers px-0 mx-auto" style="margin-bottom: 50px">
+        <div class="container-fluid mx-auto">
+            <h1 class="block_title mx-auto text-center text-uppercase fw-bold mb-5">Best Trainers</h1>
+            <div class="slider slider_trainers">
+                <div class="slider__wrapper mx-auto">
+                    <div class="slider__items">
+                        <div class="slider__item p-md-5 p-1">
+                            <div class="bg-dark w-100 h-100 d-flex flex-column-reverse">
+                                <div class="best_trainers_description h-50 bg-light d-flex flex-column">
+                                    <h5 class="w-75 mx-auto my-3 ff-palatino fw-bold text-center">Жаксылы́к Амиралыулы Ушкемпи́ров</h5>
+                                    <h6 class="mx-auto ff-palatino text-center">
+                                        Грек-рим күресінің палуаны, спорт шебері (1971), Халықаралық спорт шебері (1975), Еңбек сіңірген спорт шебері (1980), алтын медальге иеленген қазақтан шыққан тұңғыш Олимпиада чемпионы
+                                    </h6>
+                                </div>
+                                <div class="best_trainers_img" style="background-image: url(https://malim.kz/images/article_img/1600/6270-1619202091_m.jpg)">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider__item p-md-5 p-1">
+                            <div class="bg-dark w-100 h-100 d-flex flex-column-reverse">
+                                <div class="best_trainers_description h-50 bg-light d-flex flex-column">
+                                    <h5 class="w-75 mx-auto my-3 ff-palatino fw-bold text-center">Жаксылы́к Амиралыулы Ушкемпи́ров</h5>
+                                    <h6 class="mx-auto ff-palatino text-center">
+                                        Грек-рим күресінің палуаны, спорт шебері (1971), Халықаралық спорт шебері (1975), Еңбек сіңірген спорт шебері (1980), алтын медальге иеленген қазақтан шыққан тұңғыш Олимпиада чемпионы
+                                    </h6>
+                                </div>
+                                <div class="best_trainers_img" style="background-image: url(https://malim.kz/images/article_img/1600/6270-1619202091_m.jpg)">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider__item p-md-5 p-1">
+                            <div class="bg-dark w-100 h-100 d-flex flex-column-reverse">
+                                <div class="best_trainers_description h-50 bg-light d-flex flex-column">
+                                    <h5 class="w-75 mx-auto my-3 ff-palatino fw-bold text-center">Жаксылы́к Амиралыулы Ушкемпи́ров</h5>
+                                    <h6 class="mx-auto ff-palatino text-center">
+                                        Грек-рим күресінің палуаны, спорт шебері (1971), Халықаралық спорт шебері (1975), Еңбек сіңірген спорт шебері (1980), алтын медальге иеленген қазақтан шыққан тұңғыш Олимпиада чемпионы
+                                    </h6>
+                                </div>
+                                <div class="best_trainers_img" style="background-image: url(https://malim.kz/images/article_img/1600/6270-1619202091_m.jpg)">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider__item p-md-5 p-1">
+                            <div class="bg-dark w-100 h-100 d-flex flex-column-reverse">
+                                <div class="best_trainers_description h-50 bg-light d-flex flex-column">
+                                    <h5 class="w-75 mx-auto my-3 ff-palatino fw-bold text-center">Жаксылы́к Амиралыулы Ушкемпи́ров</h5>
+                                    <h6 class="mx-auto ff-palatino text-center">
+                                        Грек-рим күресінің палуаны, спорт шебері (1971), Халықаралық спорт шебері (1975), Еңбек сіңірген спорт шебері (1980), алтын медальге иеленген қазақтан шыққан тұңғыш Олимпиада чемпионы
+                                    </h6>
+                                </div>
+                                <div class="best_trainers_img" style="background-image: url(https://malim.kz/images/article_img/1600/6270-1619202091_m.jpg)">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider__item p-md-5 p-1">
+                            <div class="bg-dark w-100 h-100 d-flex flex-column-reverse">
+                                <div class="best_trainers_description h-50 bg-light d-flex flex-column">
+                                    <h5 class="w-75 mx-auto my-3 ff-palatino fw-bold text-center">Жаксылы́к Амиралыулы Ушкемпи́ров</h5>
+                                    <h6 class="mx-auto ff-palatino text-center">
+                                        Грек-рим күресінің палуаны, спорт шебері (1971), Халықаралық спорт шебері (1975), Еңбек сіңірген спорт шебері (1980), алтын медальге иеленген қазақтан шыққан тұңғыш Олимпиада чемпионы
+                                    </h6>
+                                </div>
+                                <div class="best_trainers_img" style="background-image: url(https://malim.kz/images/article_img/1600/6270-1619202091_m.jpg)">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider__item p-md-5 pt-1">
+                            <div class="bg-dark w-100 h-100 d-flex flex-column-reverse">
+                                <div class="best_trainers_description h-50 bg-light  d-flex flex-column ">
+                                    <h5 class="w-75 mx-auto my-3 ff-palatino fw-bold text-center">Жаксылы́к Амиралыулы Ушкемпи́ров</h5>
+                                    <h6 class="mx-auto ff-palatino text-center">
+                                        Грек-рим күресінің палуаны, спорт шебері (1971), Халықаралық спорт шебері (1975), Еңбек сіңірген спорт шебері (1980), алтын медальге иеленген қазақтан шыққан тұңғыш Олимпиада чемпионы
+                                    </h6>
+                                </div>
+                                <div class="best_trainers_img" style="background-image: url(https://malim.kz/images/article_img/1600/6270-1619202091_m.jpg)">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="slider__control d-none d-md-flex" data-slide="prev"></a>
+                <a href="#" class="slider__control d-none d-md-flex" data-slide="next"></a>
+                <ol class="slider__indicators mx-0">
+                    <li data-slide-to="0"></li>
+                    <li data-slide-to="1"></li>
+                    <li data-slide-to="2"></li>
+                    <li data-slide-to="3"></li>
+                    <li data-slide-to="4"></li>
+                    <li data-slide-to="5"></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <!--  Partners  -->
+    <div class="partners px-5 mx-auto" style="margin-bottom: 150px">
+        <div class="inner_partners px-0">
+            <h1 class="ff-palatino fw-bold text-uppercase mx-auto text-center my-5">Partners</h1>
+
+            <div class="slider slider_partner mx-auto">
+                <div class="slider__wrapper mx-auto">
+                    <div class="slider__items" data-proportion-lg-h="0.25" >
+                        <div class="slider__item d-flex p-5">
+                            <img class="align-middle" src="img/partners/partner_1.svg" alt="1">
+                        </div>
+                        <div class="slider__item d-flex p-5">
+                            <img class="align-middle" src="img/partners/partner_2.svg" alt="1">
+                        </div>
+                        <div class="slider__item d-flex p-5">
+                            <img class="align-middle" src="img/partners/partner_3.svg" alt="1">
+                        </div>
+                        <div class="slider__item d-flex p-5">
+                            <img class="align-middle" src="img/partners/partner_4.png" alt="1">
+                        </div>
+                        <div class="slider__item d-flex p-5">
+                            <img class="align-middle" src="img/partners/partner_5.svg" alt="1">
+                        </div>
+                        <div class="slider__item d-flex p-5">
+                            <img class="align-middle" src="img/partners/partner_6.svg" alt="1">
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="slider__control d-none d-md-flex" data-slide="prev"></a>
+                <a href="#" class="slider__control d-none d-md-flex" data-slide="next"></a>
+                <ol class="slider__indicators mx-0 ">
+                    <li data-slide-to="0"></li>
+                    <li data-slide-to="1"></li>
+                    <li data-slide-to="2"></li>
+                    <li data-slide-to="3"></li>
+                    <li data-slide-to="4"></li>
+                    <li data-slide-to="5"></li>
+                </ol>
+            </div>
+
+        </div>
+    </div>
+
+    <!--  Contact Us  -->
+    <div class="contact_us row px-0 mx-auto" style="">
+        <div class="inner_contact_us mx-auto px-0 row">
+            <div class="col-12 col-lg-8 col-mg-10 mx-auto px-0">
+                <h1 class="ff-palatino fw-bold text-uppercase mx-auto text-center my-5">Contact Us</h1>
+                <ul class="fs-5 ff-palatino lh-5 text-center">
+                    <li class="p-2 list-unstyled"><span class="fw-bold">Address: </span>Nur-Sultan, Dostyq st. 20, 13 floor, 1304 room.</li>
+                    <li class="p-2 list-unstyled"><span class="fw-bold">E-Mail: </span>bapkerkz@gmail.com</li>
+                    <li class="p-2 list-unstyled"><span class="fw-bold">Phone Number: </span>+7 (747) 127 78 98</li>
+                </ul>
+            </div>
+            <div class="map m-0 p-0">
+                <iframe class="" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2504.129886161592!2d71.43382671564206!3d51.12451217957402!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4245841b8d9264d3%3A0x8b13570005cc8eed!2sDostyq%20St%2020%2C%20Nur-Sultan%20020000!5e0!3m2!1sen!2skz!4v1629734297972!5m2!1sen!2skz" width="100%" height="400" style="border:0; padding: 0; margin: 0" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!--  Footer  -->
+    <footer class="footer px-0 row mx-auto">
+        <div class="inner_footer col-12 col-lg-8 col-md-10 row mx-auto p-5">
+            <div class="col-12 col-md-6 col-lg-4 mx-auto">
+                <div class="ff-palatino text-white">Спорт түрлері бойынша ҚР жаттықтырушыларының бірыңғай базасы</div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mx-auto">
+                <h3 class="text-center text-white ff-palatino">Contact</h3>
+
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mx-auto"></div>
+        </div>
+    </footer>
+
+
+<script>
+    var SJ_setiings = {
+        options: {
+            hlw: true, // Height as width
+            wlh: true, // Width as height
+            hlt: true, // Width of the target element (target id is the same as for height)
+            wlt: true, // Height of the target element (target id is the same as for width)
+            alo: true, // All elements as one (height)
+        },
+        settings: {
+            windowResize: true,
+            writeHystory: true
+        }
+    }
+    var sj = new SJ({
+        settings: {
+            windowResize: true
+        }
+    });
+</script>
+
+<script src="js/bootstrap.bundle.js"></script>
+<script src="js/bootstrap.esm.js"></script>
+</body>
+</html>
